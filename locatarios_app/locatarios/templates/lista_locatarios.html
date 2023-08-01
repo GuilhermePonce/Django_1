@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Locatários</title>
+</head>
+<body>
+    <h1>Lista de Locatários</h1>
+    <ul>
+        {% for locatario in locatarios %}
+            <li>{{ locatario.nome }} - {{ locatario.endereco }} - {{ locatario.telefone }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
